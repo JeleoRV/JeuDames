@@ -1,4 +1,4 @@
-// main pour les tests googletest
+// TESTS GOOGLETEST
 
 #include "jeu.h"
 #include "gtest/gtest.h"
@@ -32,5 +32,14 @@ TEST_F(pionTest, pionRang){
 }
 	
 class caseTest : public ::testing::Test{
-	//
+protected:
+	virtual void SetUp() {
+
+	}
+
+	virtual void TearDown() {
+		//
+	}
+
+
 };
