@@ -7,8 +7,16 @@
 using namespace std;
 
 class board {
-public:
+private:
 	int taille; // largeur du plateau
 	vector<Case*> cases; // création des différentes cases du plateau
 
+
+public:
+	// Construteurs
+	board(); // constructeur par defaut
+	board(int _taille); // construteur classique
+
+	// Destructeur
+	~board() {}
 };
