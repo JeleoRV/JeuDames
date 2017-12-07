@@ -4,19 +4,19 @@
 
 using namespace std;
 
-pion::pion(bool _couleur, bool _rang, string _nom) {
+pion::pion(bool _couleur, bool _rang, string _nom) { // constructeur complet
 	couleur = _couleur;
 	rang = _rang;
 	nom = _nom;
 }
 
-pion::pion() {
+pion::pion() { // constructeur par défaut
 	rang = PION;
 	couleur = BLANC;
 	nom = "";
 }
 
-pion::pion(bool _couleur) {
+pion::pion(bool _couleur) { // constructeur de bas avec seulement
 	couleur = _couleur;
 	rang = PION;
 	if (couleur == BLANC) {
